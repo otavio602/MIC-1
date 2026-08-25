@@ -8,7 +8,6 @@
 
 - Jade Giulia Januaria de Souza
 - Otavio Vieira de Souza
-- Kairo Henrique Ferreira Martins
 
 ## Estrutura do projeto
 
