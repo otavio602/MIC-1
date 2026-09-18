@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 32 1152 200 1168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RD" (rect 5 0 22 12)(font "Arial" ))
+	(text "RD" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect 32 1080 200 1096)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CS" (rect 5 0 21 12)(font "Arial" ))
+	(text "CS" (rect 5 0 20 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 1272 208 1288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "OE" (rect 5 0 21 12)(font "Arial" ))
+	(text "OE" (rect 5 0 20 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -2264,10 +2264,6 @@ applicable agreement for further details.
 	(flipx)
 )
 (connector
-	(pt 352 104)
-	(pt 968 104)
-)
-(connector
 	(pt 984 216)
 	(pt 968 216)
 )
@@ -2428,10 +2424,6 @@ applicable agreement for further details.
 	(pt 720 216)
 )
 (connector
-	(pt 968 104)
-	(pt 968 216)
-)
-(connector
 	(pt 744 384)
 	(pt 720 384)
 )
@@ -2554,10 +2546,6 @@ applicable agreement for further details.
 (connector
 	(pt 1024 448)
 	(pt 1024 440)
-)
-(connector
-	(pt 968 216)
-	(pt 968 384)
 )
 (connector
 	(pt 968 384)
@@ -3282,6 +3270,18 @@ applicable agreement for further details.
 (connector
 	(pt 1368 1280)
 	(pt 1224 1280)
+)
+(connector
+	(pt 968 104)
+	(pt 352 104)
+)
+(connector
+	(pt 968 104)
+	(pt 968 216)
+)
+(connector
+	(pt 968 216)
+	(pt 968 384)
 )
 (junction (pt 80 440))
 (junction (pt 80 488))
