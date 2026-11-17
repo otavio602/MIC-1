@@ -38,13 +38,81 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY MPC_GENERATOR
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:55:31  MAY 28, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE LV_initial_address.bdf
+set_global_assignment -name BDF_FILE CPP_initial_address.bdf
+set_global_assignment -name BDF_FILE mbr_extensor.bdf
+set_global_assignment -name SOURCE_FILE CONTROL_STORE.cmp
+set_global_assignment -name BSF_FILE CONTROL_STORE.bsf
+set_global_assignment -name MIF_FILE microcode.mif
+set_global_assignment -name QIP_FILE CONTROL_STORE.qip
+set_global_assignment -name BDF_FILE LV.bdf
+set_global_assignment -name BDF_FILE H.bdf
+set_global_assignment -name BDF_FILE CPP.bdf
+set_global_assignment -name BDF_FILE TOS.bdf
+set_global_assignment -name BDF_FILE SP.bdf
+set_global_assignment -name BDF_FILE PC.bdf
+set_global_assignment -name BDF_FILE OPC.bdf
+set_global_assignment -name BDF_FILE MDR.bdf
+set_global_assignment -name BDF_FILE MBR.bdf
+set_global_assignment -name BDF_FILE MAR.bdf
+set_global_assignment -name BDF_FILE DATAPATH.bdf
+set_global_assignment -name BDF_FILE CONTROL_UNIT.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_wide_istore.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_wide_iload.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_nop.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_istore.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_iload.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_iflt.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_ificmpeq.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_ifeq.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_goto.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_bipush_iadd.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_bipush.vwf
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name BDF_FILE MIC1.bdf
+set_global_assignment -name BSF_FILE ULA_32bits.bsf
+set_global_assignment -name BSF_FILE ULA_8bits.bsf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_OR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_CONSTANTS.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_AND.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_ADD.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit_b.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit.vwf
+set_global_assignment -name BSF_FILE ULA_1bit.bsf
+set_global_assignment -name SOURCE_FILE SHIFTER.vwf.temp
+set_global_assignment -name VECTOR_WAVEFORM_FILE SHIFTER.vwf
+set_global_assignment -name BSF_FILE SHIFTER.bsf
+set_global_assignment -name VECTOR_WAVEFORM_FILE REGISTER32bit.vwf
+set_global_assignment -name BSF_FILE REGISTER32bit.bsf
+set_global_assignment -name BDF_FILE REGISTER32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE REGISTER8bit.vwf
+set_global_assignment -name BSF_FILE REGISTER8bit.bsf
+set_global_assignment -name BDF_FILE REGISTER8bit.bdf
+set_global_assignment -name MIF_FILE RAM.mif
+set_global_assignment -name TEXT_FILE "RAM memory map.txt"
+set_global_assignment -name SOURCE_FILE mpc_generator.vwf.temp
+set_global_assignment -name VECTOR_WAVEFORM_FILE mpc_generator.vwf
+set_global_assignment -name BSF_FILE MPC_GENERATOR.bsf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MIC1_iload_iadd.vwf
+set_global_assignment -name SOURCE_FILE MIC1.qsf
+set_global_assignment -name SOURCE_FILE MIC1.qpf
+set_global_assignment -name SOURCE_FILE mem_4x3.vwf.temp
+set_global_assignment -name VECTOR_WAVEFORM_FILE FULL_ADER_1BIT.vwf
+set_global_assignment -name BSF_FILE FULL_ADER_1BIT.bsf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DECODER_2TO4.vwf
+set_global_assignment -name BSF_FILE DECODER_2TO4.bsf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS.vwf
 set_global_assignment -name BDF_FILE MPC_GENERATOR.bdf
 set_global_assignment -name BDF_FILE ULA_8bits.bdf
 set_global_assignment -name BDF_FILE ULA_32bits.bdf
@@ -56,10 +124,8 @@ set_global_assignment -name BDF_FILE DECODER_2TO4.bdf
 set_global_assignment -name BDF_FILE BANK_REGS.bdf
 set_global_assignment -name BDF_FILE DECODER_2To4.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE DECODER_2To4.vwf
-set_global_assignment -name BDF_FILE MIC1.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mem_4x3.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU_teste.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/otavi/OneDrive/Área de Trabalho/Faculdade/AOC/MIC-1-main/mpc_generator.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/MIC-1-main/CPU_teste.vwf"
